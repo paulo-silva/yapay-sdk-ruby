@@ -1,0 +1,15 @@
+test: &default
+
+  # Credentials for REST APIs
+  yapay_username: foo
+  yapay_password: strongpa$$w0rd
+
+  # Mode can be 'live' or 'sandbox'
+  mode: sandbox
+
+development:
+  <<: *default
+
+production:
+  <<: *default
+  mode: live
